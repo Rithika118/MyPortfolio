@@ -1,9 +1,13 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Rithika Paduchuri — Web Developer specializing in HTML, CSS, JavaScript, and Tailwind CSS."
+    />
+    <title>Rithika Paduchuri | Web Developer</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css" />
@@ -12,13 +16,13 @@
   <body class="bg-slate-950 text-white">
     <header class="sticky top-0 z-50 bg-slate-950/90 backdrop-blur border-b border-slate-800">
       <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <h1 class="text-2xl font-bold text-cyan-400">MyPortfolio</h1>
+        <a href="#hero" class="text-2xl font-bold text-cyan-400">Rithika P.</a>
 
         <ul class="flex gap-6 text-sm md:text-base">
-          <li><a href="#hero" class="hover:text-cyan-400">Home</a></li>
-          <li><a href="#about" class="hover:text-cyan-400">About</a></li>
-          <li><a href="#projects" class="hover:text-cyan-400">Projects</a></li>
-          <li><a href="#contact" class="hover:text-cyan-400">Contact</a></li>
+          <li><a href="#hero" class="hover:text-cyan-400 transition-colors">Home</a></li>
+          <li><a href="#about" class="hover:text-cyan-400 transition-colors">About</a></li>
+          <li><a href="#projects" class="hover:text-cyan-400 transition-colors">Projects</a></li>
+          <li><a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -26,21 +30,39 @@
     <section id="hero" class="min-h-screen flex items-center justify-center px-6">
       <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         <div>
+          <p class="text-cyan-400 font-semibold mb-4 tracking-wide uppercase text-sm">
+            Web Developer
+          </p>
+
           <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
-            Hi, I'm <span class="text-cyan-400">Your Name</span>
+            Hi, I'm <span class="text-cyan-400">Rithika Paduchuri</span>
           </h1>
 
           <p class="text-slate-300 text-lg mb-8">
-            Aspiring Web Developer passionate about building beautiful and responsive websites.
+            I build beautiful, responsive, and user-friendly websites using modern web technologies.
           </p>
 
-          <div class="flex gap-4">
-            <a href="#projects" class="bg-cyan-400 text-black px-6 py-3 rounded-xl font-semibold">
+          <div class="flex flex-wrap gap-4 mb-8">
+            <a href="#projects" class="bg-cyan-400 text-black px-6 py-3 rounded-xl font-semibold hover:bg-cyan-300 transition-colors">
               View Projects
             </a>
 
-            <a href="#contact" class="border border-cyan-400 text-cyan-400 px-6 py-3 rounded-xl">
+            <a href="#contact" class="border border-cyan-400 text-cyan-400 px-6 py-3 rounded-xl hover:bg-cyan-400/10 transition-colors">
               Contact Me
+            </a>
+          </div>
+
+          <div class="flex flex-col sm:flex-row gap-4 text-sm">
+            <a href="mailto:paduchuririthika@gmail.com" class="text-slate-300 hover:text-cyan-400 transition-colors">
+              paduchuririthika@gmail.com
+            </a>
+            <a
+              href="https://www.linkedin.com/in/paduchuri-rithika-2a8b5a382"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-slate-300 hover:text-cyan-400 transition-colors"
+            >
+              LinkedIn
             </a>
           </div>
         </div>
@@ -48,7 +70,7 @@
         <div class="flex justify-center">
           <img
             src="assets/profile-placeholder.jpg"
-            alt="Profile"
+            alt="Rithika Paduchuri"
             class="w-72 h-72 object-cover rounded-full border-4 border-cyan-400 shadow-2xl"
           />
         </div>
@@ -59,54 +81,164 @@
       <div class="max-w-5xl mx-auto text-center">
         <h2 class="text-4xl font-bold mb-8 text-cyan-400">About Me</h2>
 
-        <p class="text-slate-300 text-lg leading-8 max-w-3xl mx-auto">
-          I enjoy creating modern websites using HTML, CSS, and Tailwind CSS.
+        <p class="text-slate-300 text-lg leading-8 max-w-3xl mx-auto mb-4">
+          I'm Rithika Paduchuri, a Web Developer passionate about creating clean and engaging digital experiences.
+          I love turning ideas into websites that are easy to use and look great on every screen.
         </p>
+
+        <p class="text-slate-300 text-lg leading-8 max-w-3xl mx-auto mb-10">
+          I'm skilled in HTML, CSS, JavaScript, and Tailwind CSS, and I'm always learning new tools to build better projects.
+        </p>
+
+        <div class="flex flex-wrap justify-center gap-3">
+          <span class="px-4 py-2 rounded-full bg-slate-800 border border-slate-700 text-cyan-400 text-sm font-medium">HTML</span>
+          <span class="px-4 py-2 rounded-full bg-slate-800 border border-slate-700 text-cyan-400 text-sm font-medium">CSS</span>
+          <span class="px-4 py-2 rounded-full bg-slate-800 border border-slate-700 text-cyan-400 text-sm font-medium">JavaScript</span>
+          <span class="px-4 py-2 rounded-full bg-slate-800 border border-slate-700 text-cyan-400 text-sm font-medium">Tailwind CSS</span>
+        </div>
       </div>
     </section>
 
     <section id="projects" class="py-24 px-6">
       <div class="max-w-6xl mx-auto">
-        <h2 class="text-4xl font-bold text-center mb-14 text-cyan-400">
-          Projects
-        </h2>
+        <h2 class="text-4xl font-bold text-center mb-14 text-cyan-400">Projects</h2>
 
         <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden">
-            <img src="assets/project-1.png" alt="Project" class="w-full h-52 object-cover" />
+          <article class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-cyan-400/50 transition-colors">
+            <img src="assets/project-1.png" alt="My Portfolio" class="w-full h-52 object-cover" />
 
             <div class="p-6">
-              <h3 class="text-2xl font-semibold mb-3">Project One</h3>
+              <h3 class="text-2xl font-semibold mb-3">My Portfolio</h3>
 
               <p class="text-slate-400 mb-4">
-                A responsive website built using HTML, CSS, and Tailwind.
+                A personal portfolio website showcasing my work as a Web Developer — built with HTML, CSS, JavaScript, and Tailwind CSS.
               </p>
 
-              <a href="#" class="text-cyan-400 hover:underline">
-                View Project
-              </a>
+              <a href="#hero" class="text-cyan-400 hover:underline">View Project</a>
             </div>
-          </div>
+          </article>
+
+          <article class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-cyan-400/50 transition-colors">
+            <div class="w-full h-52 bg-gradient-to-br from-cyan-500/20 to-slate-800 flex items-center justify-center">
+              <span class="text-5xl font-bold text-cyan-400/40">01</span>
+            </div>
+
+            <div class="p-6">
+              <h3 class="text-2xl font-semibold mb-3">Responsive Landing Page</h3>
+
+              <p class="text-slate-400 mb-4">
+                A mobile-first landing page with a hero section, feature cards, and a call-to-action — built using HTML and CSS.
+              </p>
+
+              <a href="#contact" class="text-cyan-400 hover:underline">View Project</a>
+            </div>
+          </article>
+
+          <article class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-cyan-400/50 transition-colors">
+            <div class="w-full h-52 bg-gradient-to-br from-purple-500/20 to-slate-800 flex items-center justify-center">
+              <span class="text-5xl font-bold text-purple-400/40">JS</span>
+            </div>
+
+            <div class="p-6">
+              <h3 class="text-2xl font-semibold mb-3">Interactive To-Do App</h3>
+
+              <p class="text-slate-400 mb-4">
+                A to-do list app where users can add, complete, and delete tasks — powered by JavaScript DOM manipulation.
+              </p>
+
+              <a href="#contact" class="text-cyan-400 hover:underline">View Project</a>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
     <section id="contact" class="py-24 px-6 bg-slate-900">
       <div class="max-w-3xl mx-auto">
-        <h2 class="text-4xl font-bold text-center mb-12 text-cyan-400">
-          Contact Me
-        </h2>
+        <h2 class="text-4xl font-bold text-center mb-8 text-cyan-400">Contact Me</h2>
 
-        <form class="space-y-6">
-          <input type="text" placeholder="Name" class="w-full px-4 py-3 rounded-xl bg-slate-800" />
-          <input type="email" placeholder="Email" class="w-full px-4 py-3 rounded-xl bg-slate-800" />
-          <textarea rows="5" placeholder="Message" class="w-full px-4 py-3 rounded-xl bg-slate-800"></textarea>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-6 mb-12 text-center">
+          <a href="mailto:paduchuririthika@gmail.com" class="text-slate-300 hover:text-cyan-400 transition-colors">
+            paduchuririthika@gmail.com
+          </a>
+          <a
+            href="https://www.linkedin.com/in/paduchuri-rithika-2a8b5a382"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-cyan-400 hover:underline"
+          >
+            Connect on LinkedIn
+          </a>
+        </div>
 
-          <button type="submit" class="bg-cyan-400 text-black px-6 py-3 rounded-xl font-semibold">
+        <form id="contact-form" class="space-y-6" novalidate>
+          <div>
+            <label for="name" class="block text-sm font-medium mb-2 text-slate-300">Name</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Your name"
+              class="form-input w-full px-4 py-3 rounded-xl bg-slate-800 border border-slate-700"
+            />
+            <p id="name-error" class="hidden text-red-400 text-sm mt-2"></p>
+          </div>
+
+          <div>
+            <label for="email" class="block text-sm font-medium mb-2 text-slate-300">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="your.email@example.com"
+              class="form-input w-full px-4 py-3 rounded-xl bg-slate-800 border border-slate-700"
+            />
+            <p id="email-error" class="hidden text-red-400 text-sm mt-2"></p>
+          </div>
+
+          <div>
+            <label for="message" class="block text-sm font-medium mb-2 text-slate-300">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Write your message here..."
+              class="form-input w-full px-4 py-3 rounded-xl bg-slate-800 border border-slate-700 resize-y"
+            ></textarea>
+            <p id="message-error" class="hidden text-red-400 text-sm mt-2"></p>
+          </div>
+
+          <button
+            type="submit"
+            class="bg-cyan-400 text-black px-6 py-3 rounded-xl font-semibold hover:bg-cyan-300 transition-colors"
+          >
             Send Message
           </button>
         </form>
+
+        <p id="form-success" class="hidden mt-6 text-center text-green-400 font-medium">
+          Thank you! Your email app should open with your message ready to send.
+        </p>
       </div>
     </section>
+
+    <footer class="py-8 px-6 border-t border-slate-800 text-center text-slate-400 text-sm space-y-3">
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="mailto:paduchuririthika@gmail.com" class="hover:text-cyan-400 transition-colors">
+          paduchuririthika@gmail.com
+        </a>
+        <a
+          href="https://www.linkedin.com/in/paduchuri-rithika-2a8b5a382"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:text-cyan-400 transition-colors"
+        >
+          LinkedIn
+        </a>
+      </div>
+      <p>&copy; 2026 Rithika Paduchuri. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
